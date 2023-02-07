@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>FOOTER Y HEADER</title>
+    <style>
+        body {
+            background: #f8f5fa;
+        }
+
+        .principal {
+            margin-top: 50px;
+            font-family: 'Roboto';
+        }
+
+        .card-header-first {
+            margin-top: -40px;
+            height: 120px;
+            background-color: #a30000;
+            box-shadow: 1px 5px 15px #a2a2a2;
+        }
+
+        .card-header-second {
+            margin-top: -40px;
+            height: 120px;
+            box-shadow: 1px 5px 15px #a2a2a2;
+            background-color: blue;
+
+        }
+
+        .card-header-third {
+            margin-top: -25px;
+            height: 120px;
+            box-shadow: 1px 5px 15px #a2a2a2;
+            background: linear-gradient(-90deg, #11998e, #38ef7d);
+
+        }
+
+        .card-section-third span i {
+            padding: 17px;
+            margin: 0px 10px;
+            color: #fff;
+            height: 50px;
+            width: 50px;
+            box-shadow: 1px 6px 24px #d2d2d2;
+            background: linear-gradient(-90deg, #11998e, #38ef7d);
+        }
+
+        .card-header-third span i:hover,
+        .card-section-third span i:hover {
+            box-shadow: 1px 1px 15px #000;
+        }
+
+        .card-section {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        }
+
+        .card-section:hover {
+            box-shadow: 1px 1px 20px #d2d2d2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--MAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">🏠 Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactos.html">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mas Informacion
+                        </a>
+
+                        <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="quienes-somos.html">Quienes Somos?</a>
+                            <li>
+                        </ul>
+                    </li>
+
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </nav>
+
+                </ul>
+                <a class="navbar-brand" href="#">
+                    <span class="text-warning">Futbol Club Barcelona</span>
+                    <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/3.png" alt="" height="70px">
+
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- CARDS-->
+
+    <section class="w-100">
+        <div class="container principal">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="row">
+                        <!--tarjeta 1-->
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="card-section border rounded p-3">
+                                <div class="card-header-first rounded pt-3">
+                                    <h2 class="card-header-title text-white pt-3">Futbol</h2>
+                                </div>
+                                <div class="card-body text-center">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Accusamus, asperiores!</p>
+                                    <img src="https://cdn.aarp.net/content/dam/aarp/entertainment/television/2017/07/1140-world-cup-trophy-ball-trivia-esp.imgcache.rev.web.900.518.jpg"
+                                        class="img-fluid" alt="">
+                                    <!--MODAL-->
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#mimodal">Ver mas</button>
+                                                <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true"
+                                                    aria-label="label-modal-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Titulo</h5>
+                                                                <button class="btn-modal" data-bs-dismiss="modal"
+                                                                    aria-label="Cerrar"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                    elit. Laudantium, odit.</h1>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Acepto</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--tarjeta 2-->
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="card-section border rounded p-3">
+                                <div class="card-header-second rounded pt-3">
+                                    <h2 class="card-header-title text-white pt-3">Futbol</h2>
+                                </div>
+                                <div class="card-body text-center">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Accusamus, asperiores!</p>
+                                    <img src="https://img.asmedia.epimg.net/resizer/y1EZGuT09yo6xUBUImbDspgp5sk=/644x362/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/ACWNDSZCIVOU7MTF5LUOZL56VA.jpg"
+                                        class="img-fluid" alt="">
+                                    <!--MODAL-->
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#mimodal">Ver mas</button>
+                                                <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true"
+                                                    aria-label="label-modal-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Titulo</h5>
+                                                                <button class="btn-modal" data-bs-dismiss="modal"
+                                                                    aria-label="Cerrar"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                    elit. Delectus, odio.</h1>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Acepto</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--tarjeta 3-->
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="card-section border rounded p-3">
+                                <div class="card-header-first rounded pt-3">
+                                    <h2 class="card-header-title text-white pt-3">Futbol</h2>
+                                </div>
+                                <div class="card-body text-center">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Accusamus, asperiores!</p>
+                                    <img src="https://www.misentrenamientosdefutbol.com/wp-content/uploads/2020/11/mario-klassen-70YxSTWa2Zw-unsplash-scaled.jpg"
+                                        class="img-fluid" alt="">
+                                    <!--MODAL-->
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#mimodal">Ver mas</button>
+                                                <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true"
+                                                    aria-label="label-modal-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Titulo</h5>
+                                                                <button class="btn-modal" data-bs-dismiss="modal"
+                                                                    aria-label="Cerrar"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                    elit. Doloribus, consectetur?</h1>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Acepto</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--tarjeta 4-->
+                        <div class="col-lg-4 col-md-12 mb-4 mt-5">
+                            <div class="card-section border rounded p-3">
+                                <div class="card-header-first rounded pt-3">
+                                    <h2 class="card-header-title text-white pt-3">Futbol</h2>
+                                </div>
+                                <div class="card-body text-center">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Accusamus, asperiores!</p>
+                                    <img src="https://cdn.aarp.net/content/dam/aarp/entertainment/television/2017/07/1140-world-cup-trophy-ball-trivia-esp.imgcache.rev.web.900.518.jpg"
+                                        class="img-fluid" alt="">
+                                    <!--MODAL-->
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#mimodal">Ver mas</button>
+                                                <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true"
+                                                    aria-label="label-modal-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Titulo</h5>
+                                                                <button class="btn-modal" data-bs-dismiss="modal"
+                                                                    aria-label="Cerrar"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                    elit. Doloribus, consectetur?</h1>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Acepto</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--tarjeta 5-->
+                        <div class="col-lg-4 col-md-12 mb-4 mt-5">
+                            <div class="card-section border rounded p-3">
+                                <div class="card-header-second rounded pt-3">
+                                    <h2 class="card-header-title text-white pt-3">Futbol</h2>
+                                </div>
+                                <div class="card-body text-center">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Accusamus, asperiores!</p>
+                                    <img src="https://www.living4football.club/wp-content/uploads/2019/04/1550674513-0001dm5zv.jpg"
+                                        class="img-fluid" alt="">
+                                    <!--MODAL-->
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#mimodal">Ver mas</button>
+                                                <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true"
+                                                    aria-label="label-modal-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Titulo</h5>
+                                                                <button class="btn-modal" data-bs-dismiss="modal"
+                                                                    aria-label="Cerrar"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                    elit. Doloribus, consectetur?</h1>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Acepto</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--tarjeta 6-->
+                        <div class="col-lg-4 col-md-12 mb-4 mt-5">
+                            <div class="card-section border rounded p-3">
+                                <div class="card-header-first rounded pt-3">
+                                    <h2 class="card-header-title text-white pt-3">Futbol</h2>
+                                </div>
+                                <div class="card-body text-center">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Accusamus, asperiores!</p>
+                                    <img src="https://img.asmedia.epimg.net/resizer/y1EZGuT09yo6xUBUImbDspgp5sk=/644x362/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/ACWNDSZCIVOU7MTF5LUOZL56VA.jpg"
+                                        class="img-fluid" alt="">
+
+                                    <!--MODAL-->
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#mimodal">Ver mas</button>
+                                                <div class="modal fade" id="mimodal" tabindex="-1" aria-hidden="true"
+                                                    aria-label="label-modal-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Titulo</h5>
+                                                                <button class="btn-modal" data-bs-dismiss="modal"
+                                                                    aria-label="Cerrar"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                    elit. Doloribus, consectetur?</h1>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-bs-dismiss="modal">Acepto</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </section>
+
+    <!--EVENTO-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <nav aria-label="Paginacion de la pagina">
+                    <ul class="pagination">
+
+                        <li class="page-item"><a href="#" class="page-link">🔼</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+
+        <div class="container p-4">
+
+            <section class="">
+                <form action="">
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="col-md-5 col-12">
+
+                            <div class="col-auto">
+                            </div>
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p>
+                    Cada equipo deberá de incluir en su plantilla un arquero o portero, único jugador capaz de tocar el
+                    balón con las manos y con la tarea de impedir que el balón cruce su propio arco; un grupo de
+                    defensores; un grupo de volantes y finalmente un grupo de delanteros. Las tácticas de cada plantilla
+                    pueden variar en preferencia del director técnico a cargo del equipo de fútbol.
+                </p>
+            </section>
+
+            <section>
+
+                <div class="row">
+
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-2">
+
+                        <a class="navbar-brand d-flex " href="#">
+                            <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/3.png" alt=""
+                                height="105px">
+                        </a>
+
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-2">
+                        <h5 class="text-uppercase">CONTACTOS</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white nav-link">0984064561</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white nav-link">2-368733</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-2">
+                        <h5 class="text-uppercase">UBICACION</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white nav-link">QUITO 2023, Piso 3, Depto 6. CABA (CP 1050).
+                                    ECUADOR.</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-2">
+                        <h5 class="text-uppercase">REDES SOCIALES</h5>
+
+                        <section class="mb-4">
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" href="https://www.facebook.com/linkear.net"
+                                role="button"><i class="bi bi-facebook"></i></a>
+
+                            <!-- Whatsapp -->
+                            <a class="btn btn-success btn-floating m-1" href="https://web.whatsapp.com/"
+                                role="button"><i class="bi bi-whatsapp"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-info btn-floating m-1" href="https://twitter.com/linkear" role="button"><i
+                                    class="bi bi-twitter"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-danger btn-floating m-1" href="https://www.instagram.com/linkear/"
+                                role="button"><i class="bi bi-instagram"></i></a>
+
+                        </section>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 ECUADOR, QUITO:
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</body>
+
+</html>
